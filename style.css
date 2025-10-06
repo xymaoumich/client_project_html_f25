@@ -1,4 +1,10 @@
 /* ---- Base (mobile-first) ---- */
+
+/* Universal box sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #111;
@@ -35,7 +41,6 @@ main a[target="_blank"]:focus {
 
 .container {
     width: 100%;
-    max-width: 520px;
     margin: 0 auto;
     padding: 0 16px;
 }
@@ -380,45 +385,6 @@ strong {
 }
 
 
-/* ---- Desktop Enhancements ---- */
-/*
-@media (min-width: 700px) {
-    .container {
-        max-width: 760px;
-    }
-    .nav ul {
-    grid-template-columns: repeat(4, 1fr);
-    }
-
-    .card-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .button-list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-    }
-}
-
-@media (min-width: 1000px) {
-    .container {
-        max-width: 1100px;
-    }
-
-    .nav ul {
-    grid-template-columns: repeat(4, 1fr);
-    }
-
-    .grid-2 {
-        grid-template-columns: 1.3fr 1fr;
-    }
-
-    .card-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-*/
 /*Reduced motion*/
 /*@media (prefers-reduced-motion: reduce) {
     * {
